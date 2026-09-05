@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PilaTask: Un proyecto de estudiantes dominicanos para estudiantes dominicanos"></meta>
+    <meta name="author" content="Ederlyn Liriano">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Preview de mi sitio compartido en redes -->
+    <meta property="og:title" content="Proyecto PilaTask">
+    <meta property="og:description" content="Sé parte de un proyecto por y para estudiantes dominicanos">
+    <meta property="og:image" content="https://imgur.com/a/EUAEnLH">
+    <meta property="og:url" content="">
+
     <title>PilaTask</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
@@ -10,12 +21,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- Encabezado -->
     <header>
-        <nav>
-            <h1>PilaTask</h1>
-            <ul>
+        <nav class="nav">
+            <h1 class="logotype">PilaTask</h1>
+            <ul class="menu-items">
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#Problema">Problema</a></li>
                 <li><a href="#Visión">Visión</a></li>
@@ -26,57 +39,69 @@
         </nav>
     </header>
 
+    <!-- Pág principal -->
     <main>
+        <!-- Inicio -->
         <section id="Inicio">
-            <p>Para estudiantes</p>
-            <h3>Donde creces una planta desde tu</h3>
-            <h1>PILA DE TAREAS</h1>
+            <p class="eyebrow">Para estudiantes</p>
+            <p class="cta1">Donde creces una planta desde tu</p>
+            <p class="cta2">PILA DE TAREAS</p>
         </section>
 
+        <!-- Problema -->
         <section id="Problema">
-            <h2>Problema</h2>
+            <h2 class="problema">Problema</h2>
             <p>PilaTask surgió por tu...</p>
-            <img src="assets/Cuaderno.png" alt="Cuaderno (representando un cuaderno)" width="300px">
-            <img src="assets/Pila.png" alt="Procastinación (representando una pila de libros)" width="300px">
-            <img src="assets/Folder.png" alt="Organización (representando un fólder amarillo)" width="300px">
-            <img src="assets/Memoria.png" alt="Memoria (representando una notificación de una app)" width="300px">
+            <img src="assets/Cuaderno.png" alt="Cuaderno (representado por un cuaderno escolar)" loading="lazy" width="300px">
+            <img src="assets/Pila.png" alt="Procastinación (representado por una pila de libros)" loading="lazy" width="300px">
+            <img src="assets/Folder.png" alt="Organización (representado por un fólder amarillo)" loading="lazy" width="300px">
+            <img src="assets/Memoria.png" alt="Memoria (representado por una notificación de una app)" loading="lazy" width="300px">
         </section>
 
+        <!-- Visión -->
         <section id="Visión">
-            <h2>Visión</h2>
+            <h2 class="vision">Visión</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare. Sed porttitor purus quam, eget ultrices nulla venenatis et.</p>
         </section>
 
+        <!-- Proceso -->
         <section id="Proceso">
-            <h2>Proceso</h2>
-            <h1>10 Estudiantes encuestados</h1>
+            <h2 class="proceso">Proceso</h2>
+            <p>10 Estudiantes encuestados</p>
             <p>“que se me rompa el cuaderno”</p>
             <p>“que [el sistema que estoy usando actualmente] no me enganche a usarla”</p>
             <p>“me frustra que se me olvida [la tarea] y no tengo nada que me lo recuerde con antelación”</p>
         </section>
 
+        <!-- Sumarme -->
         <section id="Sumarme">
-            <h2>Sé parte de las naranjas hevis'</h2>
+            <h2 class="cta3">Sé parte de las naranjas hevis'</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare. Sed porttitor purus quam, eget ultrices nulla venenatis et.</p>
-            <form action="app.js" method="post">
+            <!-- Formulario -->
+            <form aria-labelledby="sumarme-form" action="app.js" method="post">
+                <h3 id="sumarme-form">Ser beta tester</h3>
+
                 <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Ederlyn">
+                    <label for="username">Nombre</label>
+                    <input id="username" name="username" type="text" placeholder="Ederlyn" required aria-required="true">
                 </div>
+
                 <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="correo@ejemplo.com">
+                    <label for="useremail">Correo electrónico</label>
+                    <input id="useremail" name="useremail" type="email" placeholder="correo@ejemplo.com" required aria-required="true">
                 </div>
+
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
+    <!-- Pie de pág -->
     <footer>
-        <h1>Ederlyn Liriano</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare.</p>
+        <h2 class="author">Ederlyn Liriano</h2>
+        <p class="author-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare.</p>
         <h2>Sigue el proyecto</h2>
-        <ul>
+        <ul class="socials">
             <li>Instagram</li>
             <li>GitHub</li>
             <li>Email</li>
