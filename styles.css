@@ -1,0 +1,77 @@
+:root{
+    --naranja: #FFA310;
+    --aqua: #00B4D8;
+    --lime: #4D8B31;
+    --coco: #FBF9F4;
+    --black: #110700;
+    --font-heading: "Short Stack", cursive;
+    --font-text: Georgia, Times, "Times New Roman", serif;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: var(--font-heading);
+}
+
+h2{
+    font-family: var(--font-heading);
+}
+
+h3{
+    font-family: var(--font-heading);
+}
+
+h4{
+    font-family: var(--font-text);
+}
+
+h5{
+    font-family: var(--font-text);
+}
+
+h6{
+    font-family: var(--font-text);
+}
+
+p{
+    font-family: var(--font-text);
+}
+
+body{
+    background-color:#00B4D8;
+}
+
+nav{
+    background-color: var(--coco);
+    color: var(--black);
+}
+
+#Inicio{
+    color: var(--coco);
+}
+
+#Problema{
+    color: var(--coco);
+}
+
+#Visión{
+    color: var(--coco);
+}
+
+#Proceso{
+    color: var(--coco);
+}
+
+#Sumarme{
+    color: var(--coco);
+}
+
+footer{
+    background-color: var(--coco);
+    color: var(--black);
+}
