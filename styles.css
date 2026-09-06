@@ -85,13 +85,56 @@ body{
     fill: var(--black);
 }
 
-#Inicio{
+.contenedor-contenido{
+    position: relative;
     padding: 0px;
-    align-items: center;
+}
+
+.contenedor-naranja{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    pointer-events: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.naranja{
+    position: sticky;
+    top: calc(100vh - 270px);
+    height: 250px;
+    width: 250px;
+    margin-right: 0px;
+
+}
+
+#Inicio{
+    justify-content: space-between;
+    min-height: 100vh;
     color: var(--coco);
 }
 
+.doodles{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.doodle img{
+    width: 100%;
+    height:auto;
+}
+
+#Inicia .cta1 .cta2{
+    display: flex;
+    padding: 15px;
+    bottom: 0%;
+}
+
 .eyebrow{
+    align-self: center;
     text-align: center;
     padding: 5px;
     color: var(--aqua);
@@ -99,22 +142,48 @@ body{
 }
 
 #Problema{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    min-height: 100vh;
     color: var(--coco);
 }
 
 #Visión{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    min-height: 100vh;
     color: var(--coco);
 }
 
 #Proceso{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    min-height: 100vh;
     color: var(--coco);
 }
 
 #Sumarme{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    min-height: 100vh;
     color: var(--coco);
 }
 
 footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    height: auto;
     background-color: var(--coco);
     color: var(--black);
 }
