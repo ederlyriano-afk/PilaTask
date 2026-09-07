@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -42,13 +43,7 @@
     <!-- Pág principal -->
     <main>
         <p class="eyebrow">Para estudiantes</p>
-
-        <div class="contenedor-contenido">
-            <div class="contenedor-naranja">
-                <img class="naranja" src="assets/Naranja.png" alt="Naranja cayendo">
-            </div>
-            <!-- Inicio -->
-            <section id="Inicio">
+        <div class="contenido">
                 <div class="doodles">
                     <img class="tree1" src="assets/doodles/tree-1.png" alt="Boceto de un árbol">
                     <img class="small-plant" src="assets/doodles/small-plant.png" alt="Boceto de una pequeña planta">
@@ -57,57 +52,63 @@
                     <img class="tree2" src="assets/doodles/tree-2.png" alt="Boceto de un árbol">
                 </div>
 
-                <p class="cta1">Donde creces una planta desde tu</p>
-                <p class="cta2">PILA DE TAREAS</p>
-            </section>
+            <div class="cta">
+                <p>Donde creces una planta desde tu</p>
+                <p>PILA DE TAREAS</p>
+            </div>
 
-            <!-- Problema -->
-            <section id="Problema">
-                <h2 class="problema">Problema</h2>
-                <p>PilaTask surgió por tu...</p>
-                <img src="assets/Cuaderno.png" alt="Cuaderno (representado por un cuaderno escolar)" loading="lazy" width="300px">
-                <img src="assets/Pila.png" alt="Procastinación (representado por una pila de libros)" loading="lazy" width="300px">
-                <img src="assets/Folder.png" alt="Organización (representado por un fólder amarillo)" loading="lazy" width="300px">
-                <img src="assets/Memoria.png" alt="Memoria (representado por una notificación de una app)" loading="lazy" width="300px">
-            </section>
+            <div class="contenedor-naranja">
+                <img class="naranja" src="assets/Naranja.png" alt="Naranja cayendo" width="55%">
+            </div>
 
-            <!-- Visión -->
-            <section id="Visión">
+            <div class="Problema">
+                <div class="sticky">
+                    <h2 class="problema">Problema</h2>
+                    <p>PilaTask surgió por tu...</p>
+                    <div class="problema-galeria">
+                        <img src="assets/Cuaderno.png" alt="Cuaderno (representado por un cuaderno escolar)" width="300px">
+                        <img src="assets/Pila.png" alt="Procastinación (representado por una pila de libros)" width="300px">
+                        <img src="assets/Folder.png" alt="Organización (representado por un fólder amarillo)" width="300px">
+                        <img src="assets/Memoria.png" alt="Memoria (representado por una notificación de una app)" width="300px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="Visión">
                 <h2 class="vision">Visión</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare. Sed porttitor purus quam, eget ultrices nulla venenatis et.</p>
-            </section>
+            </div>
 
-            <!-- Proceso -->
-            <section id="Proceso">
+            <div class="Proceso">
                 <h2 class="proceso">Proceso</h2>
                 <p>10 Estudiantes encuestados</p>
                 <p>“que se me rompa el cuaderno”</p>
                 <p>“que [el sistema que estoy usando actualmente] no me enganche a usarla”</p>
                 <p>“me frustra que se me olvida [la tarea] y no tengo nada que me lo recuerde con antelación”</p>
-            </section>
+            </div>
+
+            <div class="Sumarme">
+                <h2 class="cta3">Sé parte de las naranjas hevis'</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare. Sed porttitor purus quam, eget ultrices nulla venenatis et.</p>
+                <!-- Formulario -->
+                <form aria-labelledby="sumarme-form" action="app.js" method="post">
+                    <h3 id="sumarme-form">Ser beta tester</h3>
+
+                    <div>
+                        <label for="username">Nombre</label>
+                        <input id="username" name="username" type="text" placeholder="Ederlyn" required aria-required="true">
+                    </div>
+
+                    <div>
+                        <label for="useremail">Correo electrónico</label>
+                        <input id="useremail" name="useremail" type="email" placeholder="correo@ejemplo.com" required aria-required="true">
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
 
-        <!-- Sumarme -->
-        <section id="Sumarme">
-            <h2 class="cta3">Sé parte de las naranjas hevis'</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare. Sed porttitor purus quam, eget ultrices nulla venenatis et.</p>
-            <!-- Formulario -->
-            <form aria-labelledby="sumarme-form" action="app.js" method="post">
-                <h3 id="sumarme-form">Ser beta tester</h3>
-
-                <div>
-                    <label for="username">Nombre</label>
-                    <input id="username" name="username" type="text" placeholder="Ederlyn" required aria-required="true">
-                </div>
-
-                <div>
-                    <label for="useremail">Correo electrónico</label>
-                    <input id="useremail" name="useremail" type="email" placeholder="correo@ejemplo.com" required aria-required="true">
-                </div>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
     </main>
 
     <!-- Pie de pág -->

@@ -14,43 +14,32 @@
     scroll-behavior: smooth;
 }
 
-h1{
-    font-family: var(--font-heading);
-}
+h1{font-family: var(--font-heading);}
 
-h2{
-    font-family: var(--font-heading);
-}
+h2{font-family: var(--font-heading);}
 
-h3{
-    font-family: var(--font-heading);
-}
+h3{font-family: var(--font-heading);}
 
-h4{
-    font-family: var(--font-text);
-}
+h4{font-family: var(--font-text);}
 
-h5{
-    font-family: var(--font-text);
-}
+h5{font-family: var(--font-text);}
 
-h6{
-    font-family: var(--font-text);
-}
+h6{font-family: var(--font-text);}
 
-p{
-    font-family: var(--font-text);
-}
+p{font-family: var(--font-text);}
 
 body{
     background-color:#00B4D8;
+    overflow-x: hidden;
 }
 
+/* navbar */
 .nav{
     position: sticky;
     width: 100%;
-    height: 65px;
+    height: 50px;
     padding: 20px;
+    top: 0;
     justify-content: space-between;
     display: flex;
     box-sizing: border-box;
@@ -84,106 +73,182 @@ body{
     fill: var(--black);
 }
 
-.contenedor-contenido{
+/* main */
+
+main{
     position: relative;
-    padding: 0px;
 }
 
-.contenedor-naranja{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    pointer-events: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.naranja{
-    position: sticky;
-    top: calc(100vh - 270px);
-    height: 250px;
-    width: 250px;
-    margin-right: 0px;
-
-}
-
-#Inicio{
-    min-height: 100vh;
-    min-width: 100vh;
-    color: var(--coco);
-}
-
-.doodles{
+.contenido {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
-    align-items: stretch;
+    grid-template-rows: 
+        66.666dvh  /* doodles */
+        33.333dvh  /* CTA */
+        300dvh     /* Problema */
+        100dvh     /* Visión */
+        100dvh     /* Proceso */
+        100dvh;  /*Sumarme */
+    gap: 8px;
+}
+    
+.doodles {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .doodles img{
     width: 100%;
-    max-width: 100%;
     height: 100%;
-    display: block;
+    min-width: 0;
+    min-height: 0;
     object-fit: cover;
-    object-position: center;
 }
 
-#Inicio .cta1 .cta2{
-    display: flex;
-    padding: 15px;
-    bottom: 0%;
+.small-plant{
+    object-position: 35% center;
 }
+
+.platanera-small{
+    object-position: 55% center;
+}
+
+.cta {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    min-width: 0;
+    container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--coco);
+}
+
+.cta p:first-child{
+    font-size: 4.8cqi;
+    white-space: nowrap;
+    font-family: var(--font-heading);
+}
+
+.cta p:last-child{
+    font-size: 10.8cqi;
+    white-space: nowrap;
+    font-family: var(--font-heading);
+}
+
+.contenedor-naranja {
+    grid-column: 5;
+    grid-row: 2 / 6;
+    position: relative;
+}
+
+.naranja {
+    position: sticky;
+    top: 100px;
+    object-fit: contain;
+}
+
+
+.Problema {
+    grid-column: 1 / 5;
+    grid-row: 3;
+    color: var(--coco);
+}
+
+.Problema h2{
+    text-align: center;
+    color: var(--naranja);
+    font-size: 4rem;
+}
+
+.Problema p{
+    text-align: center;
+}
+
+.sticky{
+    position: sticky;
+    top: 50px;
+    height: calc(100dvh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.problema-galeria{
+    position: relative;
+    width: min(800px, 90%);
+    height: 400px;
+}
+
+.problema-galeria img{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    transform: translateY(-120px);
+    transition: none;
+}
+
+.problema-galeria img:nth-child(1){
+    top: 0;
+    left: 0;
+
+}
+
+.problema-galeria img:nth-child(2){
+    top: 40px;
+    left: 200px;
+}
+
+.problema-galeria img:nth-child(3){
+    top: 100px;
+    left: 400px;
+}
+
+.problema-galeria img:nth-child(4){
+    top: 180px;
+    left: 150px;
+}
+
+.Visión {
+    grid-column: 1 / 5;
+    grid-row: 4;
+    color: var(--coco);
+}
+
+.Proceso {
+    grid-column: 1 / 5;
+    grid-row: 5;
+    color: var(--coco);
+}
+
+.Sumarme {
+    grid-column: 1 / 6;
+    grid-row: 6;
+    color: var(--coco);
+}
+
 
 .eyebrow{
-    align-self: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     color: var(--aqua);
     background-color: var(--naranja);
-}
-
-#Problema{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vh;
-    color: var(--coco);
-}
-
-#Visión{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vh;
-    color: var(--coco);
-}
-
-#Proceso{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vh;
-    color: var(--coco);
-}
-
-#Sumarme{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vh;
-    color: var(--coco);
+    border-radius: 20px;
 }
 
 footer{
