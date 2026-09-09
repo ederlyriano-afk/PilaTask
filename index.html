@@ -20,107 +20,137 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
-    <script src="app.js"></script>
+
 </head>
 
 <body>
+<!--Navegación-->
+    <nav>
+        <h1 class="logotype">PilaTask</h1>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Problema">Problema</a>
+        <a href="#Visión">Visión</a>
+        <a href="#Proceso">Proceso</a>
+        <a href="#Sumarte">Sumarme</a>
+        <i class="ti ti-menu-2"></i>
+    </nav>
 
-    <!-- Encabezado -->
-    <header>
-        <nav class="nav">
-            <h1 class="logotype">PilaTask</h1>
-            <ul class="menu-items">
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Problema">Problema</a></li>
-                <li><a href="#Visión">Visión</a></li>
-                <li><a href="#Proceso">Proceso</a></li>
-                <li><a href="#Sumarme">Sumarme</a></li>
-            </ul>
-            <i class="ti ti-menu-2"></i>
-        </nav>
-    </header>
-
-    <!-- Pág principal -->
     <main>
-        <p class="eyebrow">Para estudiantes</p>
-        <div class="contenido">
-                <div class="doodles">
-                    <img class="tree1" src="assets/doodles/tree-1.png" alt="Boceto de un árbol">
-                    <img class="small-plant" src="assets/doodles/small-plant.png" alt="Boceto de una pequeña planta">
-                    <img class="platanera" src="assets/doodles/guineo.png" alt="Boceto de una platanera">
-                    <img class="platanera-small" src="assets/doodles/guineo1.png" alt="Boceto de una planta en crecimiento">
-                    <img class="tree2" src="assets/doodles/tree-2.png" alt="Boceto de un árbol">
-                </div>
+<!-- Secciones-->
+        <section id="Inicio" class="active">
+
+            <div class="doodles">
+                <div><img class="tree1" src="assets/doodles/tree-1.png" alt="Boceto de un árbol"></div>
+                <div><img class="small-plant" src="assets/doodles/small-plant.png" alt="Boceto de una pequeña planta"></div>
+                <div><img class="platanera" src="assets/doodles/guineo.png" alt="Boceto de una platanera"></div>
+                <div><img class="platanera-small" src="assets/doodles/guineo1.png" alt="Boceto de una planta en crecimiento"></div>
+                <div><img class="tree2" src="assets/doodles/tree-2.png" alt="Boceto de un árbol"></div>
+                <p class="eyebrow">Para estudiantes</p>
+            </div>
 
             <div class="cta">
                 <p>Donde creces una planta desde tu</p>
                 <p>PILA DE TAREAS</p>
             </div>
 
-            <div class="contenedor-naranja">
-                <img class="naranja" src="assets/Naranja.png" alt="Naranja cayendo" width="55%">
+            <div class="naranja">
+                <img src="assets/Naranja.png" alt="Naranja cayendo">
             </div>
 
-            <div class="Problema">
-                <div class="sticky">
-                    <h2 class="problema">Problema</h2>
-                    <p>PilaTask surgió por tu...</p>
-                    <div class="problema-galeria">
-                        <img src="assets/Cuaderno.png" alt="Cuaderno (representado por un cuaderno escolar)" width="300px">
-                        <img src="assets/Pila.png" alt="Procastinación (representado por una pila de libros)" width="300px">
-                        <img src="assets/Folder.png" alt="Organización (representado por un fólder amarillo)" width="300px">
-                        <img src="assets/Memoria.png" alt="Memoria (representado por una notificación de una app)" width="300px">
-                    </div>
+        </section>
+
+        <section id="Problema">
+            <div class="problem-text">
+                <h2>Problema</h2>
+                <p>PilaTask surgió por tu...</p>
+            </div>
+            
+            <div class="problema-galeria">
+                <img src="assets/Cuaderno.png" alt="Cuaderno (representado por un cuaderno escolar)" width="300px">
+                <img src="assets/Pila.png" alt="Procastinación (representado por una pila de libros)" width="300px">
+                <img src="assets/Folder.png" alt="Organización (representado por un fólder amarillo)" width="300px">
+                <img src="assets/Memoria.png" alt="Memoria (representado por una notificación de una app)" width="300px">
+            </div>
+        </section>
+
+        <section id="Visión">
+            <div class="vision-text">
+                <h2>Visión</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare. Sed porttitor purus quam, eget ultrices nulla venenatis.</p>
+            </div>
+
+            <div class ="vision-galeria">
+                <div class="proyecto-1">
+                    <img src="assets/Folder Vision.png" alt="Folder amarillo">
+                    <h3>Organizar y planificar</h3>
+                </div>
+                <div class="proyecto-2">
+                    <img src="assets/Folder Vision.png" alt="Folder amarillo">
+                    <h3>Escanear notas</h3>
+                </div>
+                <div class="proyecto-3">
+                    <img src="assets/Folder Vision.png" alt="Folder amarillo">
+                    <h3>Ver crecer tu jardín</h3>
                 </div>
             </div>
+        </section>
 
-            <div class="Visión">
-                <h2 class="vision">Visión</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare. Sed porttitor purus quam, eget ultrices nulla venenatis et.</p>
+        <section id="Proceso">
+            <h2>Proceso</h2>
+            
+            <div class="proceso-text-grid">
+                <h3>10</h3>
+                <p>Estudiantes encuestados</p>
             </div>
 
-            <div class="Proceso">
-                <h2 class="proceso">Proceso</h2>
-                <p>10 Estudiantes encuestados</p>
+            <div class="comentarios">
                 <p>“que se me rompa el cuaderno”</p>
                 <p>“que [el sistema que estoy usando actualmente] no me enganche a usarla”</p>
                 <p>“me frustra que se me olvida [la tarea] y no tengo nada que me lo recuerde con antelación”</p>
             </div>
+            
+        </section>
 
-            <div class="Sumarme">
-                <h2 class="cta3">Sé parte de las naranjas hevis'</h2>
+        <section id="Sumarte">
+            <div class="sumarte-text">
+                <h2>Sumarte al resto de las naranjas hevis'</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare. Sed porttitor purus quam, eget ultrices nulla venenatis et.</p>
-                <!-- Formulario -->
-                <form aria-labelledby="sumarme-form" action="app.js" method="post">
-                    <h3 id="sumarme-form">Ser beta tester</h3>
-
-                    <div>
-                        <label for="username">Nombre</label>
-                        <input id="username" name="username" type="text" placeholder="Ederlyn" required aria-required="true">
-                    </div>
-
-                    <div>
-                        <label for="useremail">Correo electrónico</label>
-                        <input id="useremail" name="useremail" type="email" placeholder="correo@ejemplo.com" required aria-required="true">
-                    </div>
-
-                    <button type="submit">Enviar</button>
-                </form>
             </div>
-        </div>
+            
+                <!-- Formulario -->
+            <form aria-labelledby="sumarme-form" action="app.js" method="post">
+                <h3 id="sumarme-form">Ser beta tester</h3>
+
+                <div>
+                    <label for="username">Nombre</label>
+                    <input id="username" name="username" type="text" placeholder="Tú nombre" required aria-required="true">
+                </div>
+
+                <div>
+                    <label for="useremail">Correo electrónico</label>
+                    <input id="useremail" name="useremail" type="email" placeholder="correo@ejemplo.com" required aria-required="true">
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <script src="script.js"></script>
 
     </main>
 
-    <!-- Pie de pág -->
     <footer>
-        <h2 class="author">Ederlyn Liriano</h2>
-        <p class="author-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare.</p>
-        <h2>Sigue el proyecto</h2>
-        <ul class="socials">
-            <li>Instagram</li>
-            <li>GitHub</li>
-            <li>Email</li>
-        </ul>
+        <div class="author">
+            <h3 class="author">Ederlyn Liriano</h3>
+            <p class="author-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare.</p>
+        </div>
+     
+        <div class="socials">
+            <h3>Sigue el proyecto</h3>
+            <a>Instagram</a>
+            <a>GitHub</a>
+            <a>Email</a>
+        </div>
     </footer>
 </body>
 </html>
