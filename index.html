@@ -24,21 +24,26 @@
 </head>
 
 <body>
-<!--Navegación-->
-    <nav>
-        <h1 class="logotype">PilaTask</h1>
-        <a href="#Inicio">Inicio</a>
-        <a href="#Problema">Problema</a>
-        <a href="#Visión">Visión</a>
-        <a href="#Proceso">Proceso</a>
-        <a href="#Sumarte">Sumarme</a>
-        <i class="ti ti-menu-2"></i>
-    </nav>
 
+<!-- Header -->
+
+    <header>
+        <nav>
+            <h1 class="logotype">PilaTask</h1>
+            <a href="#Inicio">Inicio</a>
+            <a href="#Problema">Problema</a>
+            <a href="#Visión">Visión</a>
+            <a href="#Proceso">Proceso</a>
+            <a href="#Sumarte">Sumarme</a>
+            <i class="ti ti-menu-2"></i>
+        </nav>   
+    </header>
+    
     <main>
-<!-- Secciones-->
-        <section id="Inicio" class="active">
 
+<!-- Sections-->
+
+        <section id="Inicio" class="active">
             <div class="doodles">
                 <div><img class="tree1" src="assets/doodles/tree-1.png" alt="Boceto de un árbol"></div>
                 <div><img class="small-plant" src="assets/doodles/small-plant.png" alt="Boceto de una pequeña planta"></div>
@@ -56,7 +61,6 @@
             <div class="naranja">
                 <img src="assets/Naranja.png" alt="Naranja cayendo">
             </div>
-
         </section>
 
         <section id="Problema">
@@ -66,10 +70,10 @@
             </div>
             
             <div class="problema-galeria">
-                <img src="assets/Cuaderno.png" alt="Cuaderno (representado por un cuaderno escolar)" width="300px">
-                <img src="assets/Pila.png" alt="Procastinación (representado por una pila de libros)" width="300px">
-                <img src="assets/Folder.png" alt="Organización (representado por un fólder amarillo)" width="300px">
-                <img src="assets/Memoria.png" alt="Memoria (representado por una notificación de una app)" width="300px">
+                <img class="cuaderno" src="assets/Cuaderno.png" alt="Cuaderno (representado por un cuaderno escolar)" width="300px">
+                <img class="pila" src="assets/Pila.png" alt="Procastinación (representado por una pila de libros)" width="300px">
+                <img class="folder" src="assets/Folder.png" alt="Organización (representado por un fólder amarillo)" width="300px">
+                <img class="notification" src="assets/Memoria.png" alt="Memoria (representado por una notificación de una app)" width="300px">
             </div>
         </section>
 
@@ -96,19 +100,18 @@
         </section>
 
         <section id="Proceso">
-            <h2>Proceso</h2>
-            
+                        
             <div class="proceso-text-grid">
                 <h3>10</h3>
-                <p>Estudiantes encuestados</p>
+                <p>Estudiantes
+                encuestados</p>
             </div>
 
             <div class="comentarios">
-                <p>“que se me rompa el cuaderno”</p>
-                <p>“que [el sistema que estoy usando actualmente] no me enganche a usarla”</p>
-                <p>“me frustra que se me olvida [la tarea] y no tengo nada que me lo recuerde con antelación”</p>
+                <p>“Que se me rompa el cuaderno”</p>
+                <p>“Que [el sistema que estoy usando actualmente] no me enganche a usarla”</p>
+                <p>“Me frustra que se me olvida [la tarea] y no tengo nada que me lo recuerde con antelación”</p>
             </div>
-            
         </section>
 
         <section id="Sumarte">
@@ -119,6 +122,7 @@
             
                 <!-- Formulario -->
             <form aria-labelledby="sumarme-form" action="app.js" method="post">
+                <img src="assets/Naranja.png" alt="Naranja cayendo" width="50px">
                 <h3 id="sumarme-form">Ser beta tester</h3>
 
                 <div>
@@ -139,18 +143,31 @@
 
     </main>
 
+<!-- Footer -->
+
     <footer>
         <div class="author">
+            <img class="notion-face" src="assets/my-notion-face-transparent.png" alt="Notion face" width="50px">
             <h3 class="author">Ederlyn Liriano</h3>
-            <p class="author-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor. Duis posuere tempus ornare.</p>
         </div>
+            <p class="author-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis lacus orci, vitae mollis urna vehicula quis. Ut id nisi sed urna consequat porttitor.</p>
      
         <div class="socials">
             <h3>Sigue el proyecto</h3>
-            <i class="ti ti-brand-instagram"></i>
-            <i class="ti ti-brand-github"></i>
-            <i class="ti ti-mail"></i>
+        </div> 
+
+        <div class="same-grid">
+            <div class="socials-icons">
+                <i class="ti ti-brand-instagram"></i>
+                <i class="ti ti-brand-github"></i>
+                <i class="ti ti-mail"></i>
+            </div>
+
+            <div class="ncopy">
+                <p>&copy; Derechos Reservados</p>
+            </div>
         </div>
+
     </footer>
 </body>
 </html>
