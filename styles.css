@@ -492,6 +492,10 @@ footer .socials h3{
     white-space: nowrap;
 }
 
+.notion-face{
+    width: 50px;
+}
+
 .ncopy {
     margin-top: 1rem;
     font-size: 60%;
