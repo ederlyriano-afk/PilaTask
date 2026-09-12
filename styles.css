@@ -1,6 +1,6 @@
 :root{
-    --naranja: #FFA310;
-    --aqua: #00B4D8;
+    --naranja: #FF7A21;
+    --aqua: #01B5D9;
     --lime: #4D8B31;
     --coco: #FBF9F4;
     --black: #110700;
@@ -207,6 +207,7 @@ section.active{
     font-family: var(--font-heading);
     color: var(--naranja);
     text-align: center;
+    font-size: 200%;
 }
 
 #Problema p{
@@ -264,7 +265,8 @@ section.active{
 
 #Visión h2{
     font-family: var(--font-heading);
-    color: var(--naranja)
+    color: var(--naranja);
+    font-size: 200%;
 }
 
 .vision-text{
@@ -325,16 +327,17 @@ section.active{
     place-items: center;
 }
 
-.proceso-text-grid h3{
+.proceso-text-grid :first-child{
     grid-row: 1;
     grid-column: 1;
     font-family: var(--font-heading);
     font-size: 7.5rem;
 }
 
-.proceso-text-grid p{
+.proceso-text-grid :last-child{
     grid-row: 1;
     grid-column: 2;
+    font-family: var(--font-heading);
     font-size: 2.5rem;
 }
 
@@ -351,7 +354,7 @@ section.active{
 /* Sumarte */
 
 #Sumarte{
-    background-image: url(assets/bg.png);
+    background-image: url(assets/bg.webp);
     background-repeat: no-repeat;
     background-position: center;  
     background-size: cover; 
@@ -418,7 +421,7 @@ form button{
     border: none;
     outline: none;
     height: 40px;
-    color: var(--lime);
+    color: var(--black);
     font-family: var(--font-heading);
     font-size: 100%;
     background: none;
