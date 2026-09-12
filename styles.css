@@ -1,8 +1,11 @@
 :root{
-    --naranja: #FF7A21;
-    --aqua: #01B5D9;
+    --naranja: #FFA310;
+    --mango: #F9D394;
+    --aqua: #00B4D8;
     --lime: #4D8B31;
+    --menta: #D5E4CE;
     --coco: #FBF9F4;
+    --tamarindo: #543400;
     --black: #110700;
     --font-heading: "Short Stack", cursive;
     --font-text: Georgia, Times, "Times New Roman", serif;
@@ -44,6 +47,7 @@ nav{
     color: var(--naranja);
     display: flex;
     font-family: var(--font-heading);
+    text-shadow: 1px 1px 1px var(--tamarindo);
 }
 
 nav i{
@@ -67,8 +71,9 @@ nav a:hover{
 section {
     height: 100dvh;
     display: flex;
-    color: var(--coco);
+    color: var(--black);
     scroll-margin-top: var(--nav-h);
+    background-color: var(--aqua);
 }
 
 section.active{
@@ -81,7 +86,6 @@ section.active{
     width: 100%;
     height: 100;
     box-sizing: border-box;
-    background: var(--aqua);
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     grid-template-rows: repeat(4, minmax(0, 1fr));
@@ -94,11 +98,12 @@ section.active{
     transform: translateX(-50%);
     z-index: 10;
     text-align: center;
-    font-size: 1.05rem;
+    font-size: 0.8rem;
     padding: 10px;
-    color: var(--lime);
+    color: var(--black);
     background-color: var(--naranja);
     border-radius: 25px;
+    font-family: var(--font-heading);
 }
 
 
@@ -189,7 +194,6 @@ section.active{
 /* Problema */
 
 #Problema{
-    background: var(--aqua);
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: repeat(8, minmax(0, 1fr));
@@ -201,17 +205,27 @@ section.active{
     grid-column: 5 / 9;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #Problema h2{
+    width: fit-content;
+    height: fit-content;
+    margin:0 auto;
+    padding: 10px;
     font-family: var(--font-heading);
-    color: var(--naranja);
+    color: var(--black);
+    background-color: var(--naranja);
+    border-radius: 25px;
     text-align: center;
-    font-size: 200%;
+    font-size: 100%;
 }
 
 #Problema p{
     text-align: center;
+    font-size: 125%;
 }
 
 .problema-galeria{
@@ -257,16 +271,22 @@ section.active{
 /* Visión */
 
 #Visión{
-    background: var(--aqua);
     justify-content: relative;
     display: grid;
     padding: 1.5rem;
 }
 
 #Visión h2{
+    width: fit-content;
+    height: fit-content;
+    margin:0 auto;
+    padding: 10px;
     font-family: var(--font-heading);
-    color: var(--naranja);
-    font-size: 200%;
+    color: var(--black);
+    background-color: var(--naranja);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 100%;
 }
 
 .vision-text{
@@ -307,7 +327,6 @@ section.active{
 /* Proceso */
 
 #Proceso{
-    background: var(--aqua);
     justify-content: relative;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -315,36 +334,51 @@ section.active{
     padding: 1.5rem;
 }
 
-.proceso-text-grid{
-    grid-column: 5 / 9;
-    grid-row: 2 / 4;
-    display: grid;
-    width: 100%;
-    grid-template-rows: 1;
-    grid-template-columns: 2;
-    width: 100%;
-    color: var(--naranja);
-    place-items: center;
+#Proceso h2{
+    grid-row: 1;
+    grid-column: 4 / 10;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin:0 auto;
+    padding: 10px;
+    font-family: var(--font-heading);
+    color: var(--black);
+    background-color: var(--naranja);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 100%;
 }
 
-.proceso-text-grid :first-child{
-    grid-row: 1;
-    grid-column: 1;
+.ten{
+    grid-row: 2 / 4;
+    grid-column: 4 / 6;
     font-family: var(--font-heading);
     font-size: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--naranja);
+    text-shadow: 1px 1px 1px var(--tamarindo);
 }
 
-.proceso-text-grid :last-child{
-    grid-row: 1;
-    grid-column: 2;
+.est-enc{
+    grid-row: 2 / 4;
+    grid-column: 6 / 10;
     font-family: var(--font-heading);
     font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--naranja);
+    text-shadow: 1px 1px 1px var(--tamarindo);
 }
 
 .comentarios{
     gap: 1rem;
     grid-column: 3 / 11;
-    grid-row: 5 / 7;
+    grid-row: 4 / 7;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -374,12 +408,14 @@ section.active{
     gap: 1rem;
     grid-column: 2 / 8;
     grid-row: 2 / 7;
+
 }
 
 .sumarte-text h2{
     font-family: var(--font-heading);
     color: var(--naranja);
-    font-size: 225%;
+    font-size: 250%;
+    text-shadow: 1px 1px 1px var(--tamarindo);
 }
 
 form{
@@ -399,7 +435,7 @@ form{
 
 form h3{
     font-family: var(--font-heading);
-    color: var(--naranja);
+    color: var(--black);
     font-size: 125%;
 }
 
@@ -413,7 +449,7 @@ form input[type="text"], form input[type="email"]{
 }
 
 form input[type="text"]:focus, form input[type="email"]:focus{
-    border-bottom: 2px solid var(--lime);
+    border-bottom: 2px solid var(--naranja);
     transition: border-bottom 0.3s ease-in;
 }
 
@@ -442,7 +478,7 @@ footer{
     background-color: var(--coco);
     color: var(--black);
     flex-direction: column;
-    column-gap: 20px;
+    column-gap: 50px;
 }
 
 footer .author{
@@ -468,6 +504,7 @@ footer .author h3{
 footer .author-desc {
     grid-row: 2;
     grid-column: 1;
+    font-size: 90%;
 }
 
 .same-grid {
