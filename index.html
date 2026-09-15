@@ -29,13 +29,23 @@
 
     <header>
         <nav>
-            <h1 class="logotype">PilaTask</h1>
-            <a href="#Inicio">Inicio</a>
-            <a href="#Problema">Problema</a>
-            <a href="#Visión">Visión</a>
-            <a href="#Proceso">Proceso</a>
-            <a href="#Sumarte">Sumarme</a>
-            <i class="ti ti-menu-2"></i>
+            <div class="nav-container">
+
+                <h1 class="logotype">PilaTask</h1>
+
+                <div class="toggle">
+                    <i class="ti ti-menu-2"></i>
+                </div>
+
+                <div class="nav-links">
+                    <a href="#Inicio">Inicio</a>
+                    <a href="#Problema">Problema</a>
+                    <a href="#Visión">Visión</a>
+                    <a href="#Proceso">Proceso</a>
+                    <a href="#Sumarte">Sumarme</a>
+                </div>
+                
+            </div>
         </nav>   
     </header>
     
@@ -50,6 +60,7 @@
                 <div><img class="platanera" src="assets/doodles/guineo.webp" alt="Boceto de una platanera"></div>
                 <div><img class="platanera-small" src="assets/doodles/guineo1.webp" alt="Boceto de una planta en crecimiento"></div>
                 <div><img class="tree2" src="assets/doodles/tree-2.webp" alt="Boceto de un árbol"></div>
+                <div><img class="medium-plant" src="assets/doodles/medium-plant.webp" alt="Boceto de otra platanera"></div>
                 <div class="eyebrow">Para estudiantes</div>
             </div>
 
@@ -101,7 +112,7 @@
 
         <section id="Proceso">
             <h2>Proceso</h2>
-                        
+            
             <div class="ten">10</div>
             <div class="est-enc">Estudiantes encuestados</div>
 
@@ -123,17 +134,24 @@
                 <img src="assets/Naranja.webp" alt="Naranja cayendo" width="50px">
                 <h3 id="sumarme-form">Ser beta tester</h3>
 
-                <div>
-                    <label for="username">Nombre</label>
-                    <input id="username" name="username" type="text" placeholder="Tú nombre" required aria-required="true">
+                <div class="field">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" required minlength="2 autocomplete="name" placeholder="Ederlyn Liriano" required aria-required="true">
+                    <p class="hint">Mínimo 2 carácteres.</p>
+                    <p class="error" id="err-name" aria-live="polite"></p>
                 </div>
 
-                <div>
-                    <label for="useremail">Correo electrónico</label>
-                    <input id="useremail" name="useremail" type="email" placeholder="correo@ejemplo.com" required aria-required="true">
+                <div class="field">
+                    <label for="email">Correo electrónico</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="correo@ejemplo.com" required aria-required="true">
+                    <p class="hint">Usa un correo real (se validará formato).</p>
+                    <p class="error" id="err-email" aria-live="polite"></p>
                 </div>
 
-                <button type="submit">Enviar</button>
+                <div class="actions">
+                    <button id="submitbetatest" type="submit">Enviar</button>
+                    <output id="status" aria-live="polite"></output>
+                </div>
             </form>
         </section>
 
