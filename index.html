@@ -28,21 +28,21 @@
 <!-- Header -->
 
     <header>
-        <nav>
+        <nav class="nav">
             <div class="nav-container">
 
                 <h1 class="logotype">PilaTask</h1>
 
                 <div class="toggle">
-                    <i class="ti ti-menu-2"></i>
+                    <button class="toggle-button"><i class="ti ti-menu-2"></i></button>
                 </div>
 
                 <div class="nav-links">
-                    <a href="#Inicio">Inicio</a>
-                    <a href="#Problema">Problema</a>
-                    <a href="#Visión">Visión</a>
-                    <a href="#Proceso">Proceso</a>
-                    <a href="#Sumarte">Sumarme</a>
+                    <a class="nav-item" href="#Inicio">Inicio</a>
+                    <a class="nav-item" href="#Problema">Problema</a>
+                    <a class="nav-item" href="#Visión">Visión</a>
+                    <a class="nav-item" href="#Proceso">Proceso</a>
+                    <a class="nav-item" href="#Sumarte">Sumarme</a>
                 </div>
                 
             </div>
@@ -136,7 +136,7 @@
 
                 <div class="field">
                     <label for="name">Nombre</label>
-                    <input id="name" name="name" type="text" required minlength="2 autocomplete="name" placeholder="Ederlyn Liriano" required aria-required="true">
+                    <input id="name" name="name" type="text" required minlength="2" autocomplete="name" placeholder="Ederlyn Liriano" required aria-required="true">
                     <p class="hint">Mínimo 2 carácteres.</p>
                     <p class="error" id="err-name" aria-live="polite"></p>
                 </div>
@@ -154,8 +154,6 @@
                 </div>
             </form>
         </section>
-
-        <script src="script.js"></script>
 
     </main>
 
@@ -185,5 +183,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
