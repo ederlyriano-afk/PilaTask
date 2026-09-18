@@ -344,7 +344,7 @@ section.active{
 }
 
 #Proceso h2{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 4 / 10;
     display: flex;
     justify-content: center;
