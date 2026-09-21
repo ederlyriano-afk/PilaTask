@@ -1,5 +1,6 @@
 :root{
     --naranja: #FFA310;
+    --pitajaya: #ed3921;
     --mango: #F9D394;
     --aqua: #00B4D8;
     --lime: #4D8B31;
@@ -61,6 +62,7 @@ nav{
 .toggle{
         display: none;
         cursor: pointer;
+        border: none;
 }
 
 .nav-links{
@@ -255,13 +257,13 @@ section.active{
 
 .cuaderno{
     grid-row: 2 / 4;
-    grid-column: 2 / 4;
+    grid-column: 3 / 5;
     transform: rotate(30deg);
 }
 
 .pila{
-    grid-row: 5 / 7;
-    grid-column: 3 / 5;
+    grid-row: 6 / 8;
+    grid-column: 4 / 6;
     transform: rotate(-20deg) translateY(3%) translateX(5%);
 }
 
@@ -272,8 +274,8 @@ section.active{
 }
 
 .notification{
-    grid-row: 5 / 7;
-    grid-column: 10 / 12;
+    grid-row: 6 / 8;
+    grid-column: 9 / 11;
     transform: rotate(5deg) translateY(4%);
 }
 
@@ -465,6 +467,20 @@ form input[type="text"]:focus, form input[type="email"]:focus{
     transition: border-bottom 0.3s ease-in;
 }
 
+#email-error {
+    color: var(--pitajaya);
+    font-weight: 400;
+    padding-top: 3px;
+    font-size: 75%;
+}
+
+#name-error {
+    color: var(--pitajaya);
+    font-weight: 400;
+    padding-top: 3px;
+    font-size: 75%;
+}
+
 form button{
     border: none;
     outline: none;
@@ -475,10 +491,6 @@ form button{
     background: none;
 }
 
-.hint {
-    font-size: 70%;
-    color: var(--tamarindo);
-}
 
 /* Footer */
 
@@ -568,6 +580,7 @@ footer .socials h3{
 
     .toggle{
         display: block;
+        border: none;
     }
 
     .nav-links{
@@ -616,13 +629,13 @@ footer .socials h3{
 
     .eyebrow{
         position: absolute;
-        top: 5rem;
+        top: 3.5rem;
         left: 50%;
         transform: translateX(-50%);
         z-index: 10;
         text-align: center;
-        font-size: 0.8rem;
-        padding: 10px;
+        font-size: 0.6rem;
+        padding: 6px;
         color: var(--black);
         background-color: var(--naranja);
         border-radius: 25px;
@@ -812,7 +825,7 @@ footer .socials h3{
         grid-template-rows: none;
         grid-template-columns: none;
         gap: 1rem;
-        margin: 1.5rem;
+        margin: 1rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -838,18 +851,18 @@ footer .socials h3{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 0.9rem;
         text-align: center;
     }
 
     .vision-galeria img{
-        max-width: 30%;
+        max-width: 20%;
         height: auto;
     }
 
     .vision-galeria h3{
         font-family: var(--font-heading);
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /* Proceso Media */
@@ -953,7 +966,7 @@ footer .socials h3{
 
     form{
         grid-column: 6 / 10;
-        grid-row: 2 / 5;
+        grid-row: 1 / 4;
         width: 78%;
         gap: 1rem;
         padding: 1rem;
@@ -962,7 +975,7 @@ footer .socials h3{
         align-items: center;
         flex-direction: column;
         background-color: var(--coco);
-        height: 100%;
+        height: 150%;
         color: var(--black);
         border-radius: 15px;
     }
@@ -970,7 +983,7 @@ footer .socials h3{
     form h3{
         font-family: var(--font-heading);
         color: var(--black);
-        font-size: 125%;
+        font-size: 115%;
     }
 
     form input[type="text"], form input[type="email"]{
@@ -1005,13 +1018,12 @@ footer .socials h3{
     /* Footer Media */
 
     footer{
+        display: flex;       
         align-items: relative;
         max-width: 100%;
         height: auto;
-        padding: 1rem;
         gap: 1rem;
         justify-content: space-between;
-        display: flex;       
         background-color: var(--coco);
         color: var(--black);
         flex-direction: column;
@@ -1036,7 +1048,6 @@ footer .socials h3{
     footer .author-desc {
         font-size: 90%;
         display: block;
-        padding: 20px;
         padding-top: 0;
     }
 
