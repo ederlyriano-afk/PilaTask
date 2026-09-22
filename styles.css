@@ -16,6 +16,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -23,9 +24,8 @@ html{
 }
 
 body{
-    overflow-x: hidden;
     font-family: var(--font-text);
-
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -40,7 +40,6 @@ nav{
     align-items: center;
     z-index: 100;
     background-color: var(--coco);
-    box-sizing: border-box;
 }
 
 .nav-container{
@@ -104,7 +103,6 @@ section.active{
 
 #Inicio{
     width: 100%;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-template-rows: repeat(4, minmax(0, 1fr));
@@ -135,6 +133,10 @@ section.active{
     grid-template-columns: repeat(6, 1fr);
     position: relative;
     overflow: hidden;
+}
+
+.doodles > div {
+    min-width: 0;
 }
 
 .medium-plant {
@@ -414,18 +416,21 @@ section.active{
     grid-template-rows: repeat(8, minmax(0, 1fr));
 }
 
-.sumarte-text{
+.sumarte-txt{
     display: flex;
+    min-width: 0;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
+    grid-row: 2 / 6;
     grid-column: 2 / 8;
-    grid-row: 2 / 7;
-
 }
 
-.sumarte-text h2{
+.sumarte-h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2 / 3;
+    grid-column: 2 / 11;
     font-family: var(--font-heading);
     color: var(--naranja);
     font-size: 250%;
@@ -442,7 +447,7 @@ form{
     align-items: center;
     flex-direction: column;
     background-color: var(--coco);
-    height: 110%;
+    height: 130%;
     color: var(--black);
     border-radius: 15px;
 }
@@ -551,6 +556,12 @@ footer .socials {
 
 footer .socials-icons {
     display: flex;
+    column-gap: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--black);
 }
 
 footer .socials h3{
@@ -621,7 +632,6 @@ footer .socials h3{
 
      #Inicio{
         width: 100%;
-        box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-rows: repeat(4, minmax(0, 1fr));
@@ -781,25 +791,25 @@ footer .socials h3{
 
     .cuaderno{
         grid-row: 2 / 4;
-        grid-column: 2 / 4;
+        grid-column: 2 / 5;
         transform: rotate(30deg);
     }
 
     .pila{
         grid-row: 6 / 8;
-        grid-column: 2 / 4;
+        grid-column: 2 / 5;
         transform: rotate(-20deg) translateY(3%) translateX(5%);
     }
 
     .folder{
         grid-row: 2 / 4;
-        grid-column: 7 / 9;
-        transform: rotate(-20deg);
+        grid-column: 6 / 9;
+        transform: rotate(-8deg) translate(15px);
     }
 
     .notification{
         grid-row: 6 / 8;
-        grid-column: 7 / 9;
+        grid-column: 6 / 9;
         transform: rotate(5deg) translateY(4%);
     }
 
@@ -856,7 +866,7 @@ footer .socials h3{
     }
 
     .vision-galeria img{
-        max-width: 20%;
+        max-width: 40%;
         height: auto;
     }
 
@@ -875,10 +885,11 @@ footer .socials h3{
     }
 
     #Proceso h2{
-        grid-row: 2;
-        grid-column: 5;
+        grid-row: 2 / 2;
+        grid-column: 4 / 7;
         display: flex;
-        justify-content: center;
+        justify-content: bottom;
+        align-items: center;
         width: fit-content;
         height: fit-content;
         margin:0 auto;
@@ -945,37 +956,41 @@ footer .socials h3{
         grid-template-rows: repeat(7, minmax(0, 1fr));
     }
 
-    .sumarte-text{
+    .sumarte-txt{
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        gap: 2rem;
-        grid-column: 1 / 6;
-        grid-row: 2 / 5;
-        padding: 1rem;
-
+        text-align: center;
+        grid-column: 2 / 9;
+        grid-row: 2 / 3;
+        padding-top: 3rem;
+        font-size: 100%;
     }
 
-    .sumarte-text h2{
+    .sumarte-h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-column: 2 / 9;
+        grid-row: 1 / 2;
         font-family: var(--font-heading);
         color: var(--naranja);
-        font-size: 215%;
+        font-size: 125%;
         text-shadow: 1px 1px 1px var(--tamarindo);
     }
 
     form{
-        grid-column: 6 / 10;
-        grid-row: 1 / 4;
-        width: 78%;
+        grid-column: 2 / 9;
+        grid-row: 4 / 7;
+        width: 100%;
         gap: 1rem;
         padding: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         background-color: var(--coco);
-        height: 150%;
+        height: 100%;
         color: var(--black);
         border-radius: 15px;
     }
@@ -983,7 +998,7 @@ footer .socials h3{
     form h3{
         font-family: var(--font-heading);
         color: var(--black);
-        font-size: 115%;
+        font-size: 100%;
     }
 
     form input[type="text"], form input[type="email"]{
@@ -1007,18 +1022,15 @@ footer .socials h3{
         color: var(--black);
         font-family: var(--font-heading);
         font-size: 100%;
-        background: none;
-    }
-
-    .hint {
-        font-size: 70%;
-        color: var(--tamarindo);
+        background: var(--coco);
+        padding: 25px;
+        border-radius: 8px;
     }
 
     /* Footer Media */
 
     footer{
-        display: flex;       
+        display: flex;
         align-items: relative;
         max-width: 100%;
         height: auto;
@@ -1064,7 +1076,8 @@ footer .socials h3{
 
     footer .socials-icons {
         display: flex;
-        column-gap: 18px;
+        column-gap: 15px;
+        text-decoration: none;
     }
 
     footer .socials h3{
