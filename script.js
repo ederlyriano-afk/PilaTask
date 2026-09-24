@@ -15,8 +15,10 @@ function setupMenuToggle() {
 }
 
 function setupFormValidation() {
-    
+
     // Variables
+    const betaForm = document.querySelector("#beta-form");
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyxgrJ3PTFQHKi6G3bCPLUu_BmoZsnLwGN-J0O7KdvgJHfSwAJPS0KnJR3TRtgxGmI/exec";
     const nameField = document.getElementById("name-field");
     const nameError = document.getElementById("name-error");
     const emailField = document.getElementById("email-field");
@@ -61,16 +63,33 @@ function setupFormValidation() {
     emailField.addEventListener("blur", validateEmail);
 
     // Submit
-    const form = document.querySelector("form");
+    betaForm.addEventListener("submit", async (event) => { //async = prepared to wait
 
-    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
         const isFormValid = validateForm();
 
         if (!isFormValid){
-            event.preventDefault();
-        } else {
-            alert('¡Enviado correctamente!');
+            return;
+        } 
+
+        const formData = new FormData(betaForm);
+
+        try {
+            await fetch(scriptURL, { //wait for this (from async)
+                method: "POST",
+                body: new URLSearchParams(formData),
+                mode: "no-cors"
+            });
+
+        alert("¡Enviado correctamente!");
+        betaForm.reset();
+
+        }catch(error) {
+            console.error("Error al enviar:", error);
+            alert("No se pudo enviar el formulario.");
         }
+
     });
 
 }
