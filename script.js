@@ -28,7 +28,7 @@ function setupFormValidation() {
     function validateName() {
 
         if(!nameField.value.match(/^[A-Za-z]{2}/)){
-            nameError.innerHTML = "Mínimo 2 carácteres.";
+            nameError.innerHTML = "Mínimo 2 caracteres.";
             return false;
         }
 
