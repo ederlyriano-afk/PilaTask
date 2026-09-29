@@ -1,16 +1,18 @@
 <img width="600" height="200" alt="PilaTask banner" align="center" src="https://github.com/user-attachments/assets/1df11205-eee0-43e5-a4ec-deddd912eb1d" />
 
-TLDR: This is a showcase website for PilaTask: an app idea tailored for students. Not the actual app.
+TLDR: This is a showcase website for PilaTask: an app idea meant for students. Not the actual app.
+###### Follow my socials for more updates of the project and behind the scenes:
+<a href="https://linktr.ee/ederlyriano"><img width="24" height="24" alt="brand-linktree" src="https://github.com/user-attachments/assets/879f1e71-9b1d-44a0-ab3d-3e87d1eb9fe9" /></a> <a href="https://www.instagram.com/ederlyriano/"><img width="24" height="24" alt="brand-instagram" src="https://github.com/user-attachments/assets/2ea7c44f-b547-42a6-9e37-00b4119777fd" /></a> <a href="mailto:ederlyriano@gmail.com"><img width="24" height="24" alt="mail" src="https://github.com/user-attachments/assets/d84b7c21-239b-4331-89d1-c268f0b09e42" /></a>
 
 # Table of contents
-- [What this is and isn't](#what-this-is-and-isn't)
-- [Why I built it](#why-i-built-it)
-- [The concept of PilaTask](#the-concept-of-pilatask)
-- [The build process](#the-build-process)
-- [Observations and improvement areas](#observations-and-improvement-areas)
-- [Future features I want to implement](#future-features-i-want-to-implement)
-- [Update log](#update-log)
-- [Licenses and resources](#licences-and-resources)
+- [What this is and isn't](https://github.com/ederlyriano-afk/PilaTask#what-this-is-and-isnt)
+- [Why I built it](https://github.com/ederlyriano-afk/PilaTask#why-i-built-it)
+- [The concept of PilaTask](https://github.com/ederlyriano-afk/PilaTask#the-concept-of-pilatask)
+- [The build process](https://github.com/ederlyriano-afk/PilaTask#the-build-process)
+- [Observations and improvement areas](https://github.com/ederlyriano-afk/PilaTask#observations-and-improvement-areas)
+- [Future features I want to implement](https://github.com/ederlyriano-afk/PilaTask#future-features-i-want-to-implement)
+- [Update log](https://github.com/ederlyriano-afk/PilaTask#update-log)
+- [Licenses and resources](https://github.com/ederlyriano-afk/PilaTask#licenses-and-resources)
 
 # What this is and isn't
 My first ever website: [PilaTask - Project](https://pilatask.vercel.app/).
