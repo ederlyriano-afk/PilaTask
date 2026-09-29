@@ -419,16 +419,13 @@ section.active{
     min-width: 0;
     align-items: center;
     justify-content: center;
-    grid-row: 2 / 6;
+    grid-row: 3 / 6;
     grid-column: 2 / 8;
 }
 
 .sumarte-h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     grid-row: 2 / 3;
-    grid-column: 2 / 11;
+    grid-column: 2 / 10;
     font-family: var(--font-heading);
     color: var(--naranja);
     font-size: 250%;
@@ -929,9 +926,6 @@ footer .socials h3{
     }
 
     .sumarte-h2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         text-align: center;
         grid-column: 2 / 9;
         grid-row: 1 / 2;
